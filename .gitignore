@@ -1,0 +1,5 @@
+mapa.db
+__pycache__/
+.venv/
+resultados/
+.pytest_cache/
