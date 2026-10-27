@@ -1,0 +1,17 @@
+[
+  {"id": "variavel", "nome": "Variável", "descricao": "Armazenar e ler valores com nome.", "prerequisitos": []},
+  {"id": "tipos", "nome": "Tipos de dados", "descricao": "Inteiro, real, texto e lógico, e como cada um se comporta.", "prerequisitos": ["variavel"]},
+  {"id": "operadores", "nome": "Operadores", "descricao": "Operações aritméticas, relacionais e lógicas e sua precedência.", "prerequisitos": ["variavel"]},
+  {"id": "entrada_saida", "nome": "Entrada e saída", "descricao": "Ler dados do usuário e exibir resultados.", "prerequisitos": ["variavel"]},
+  {"id": "condicional", "nome": "Condicional", "descricao": "Executar trechos diferentes conforme uma condição (if/elif/else).", "prerequisitos": ["operadores"]},
+  {"id": "laco", "nome": "Laço", "descricao": "Repetir um trecho enquanto uma condição vale ou para cada valor (while/for).", "prerequisitos": ["condicional"]},
+  {"id": "laco_aninhado", "nome": "Laço aninhado", "descricao": "Um laço dentro de outro e quantas vezes o trecho interno executa.", "prerequisitos": ["laco"]},
+  {"id": "vetor", "nome": "Vetor", "descricao": "Sequência de valores acessados por índice (lista).", "prerequisitos": ["laco"]},
+  {"id": "busca_vetor", "nome": "Busca em vetor", "descricao": "Percorrer um vetor para encontrar um valor ou uma posição.", "prerequisitos": ["vetor", "condicional"]},
+  {"id": "matriz", "nome": "Matriz", "descricao": "Vetor de vetores, acessado por linha e coluna.", "prerequisitos": ["vetor", "laco_aninhado"]},
+  {"id": "funcao", "nome": "Função", "descricao": "Agrupar um trecho de código com nome para reutilizá-lo.", "prerequisitos": ["variavel"]},
+  {"id": "parametro", "nome": "Parâmetro", "descricao": "Passar valores para uma função no momento da chamada.", "prerequisitos": ["funcao"]},
+  {"id": "retorno", "nome": "Retorno", "descricao": "Devolver um valor da função para quem a chamou.", "prerequisitos": ["funcao"]},
+  {"id": "escopo", "nome": "Escopo de variável", "descricao": "Onde uma variável existe e pode ser usada.", "prerequisitos": ["parametro"]},
+  {"id": "recursao", "nome": "Recursão", "descricao": "Uma função que chama a si mesma até atingir um caso base.", "prerequisitos": ["retorno", "escopo", "condicional"]}
+]
