@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aluno · Mapa de Lacunas</title>
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="marca" href="/">Mapa de <span>Lacunas</span> Conceituais</a>
+    <span class="papel">Aluno</span>
+  </header>
+  <main class="estreito">
+
+    <section id="tela-inicio" class="cartao">
+      <h1>Vamos começar</h1>
+      <p class="sutil">Digite seu nome. Você vai responder de 6 a 15 questões; cada uma é escolhida para descobrir qual conceito precisa de reforço.</p>
+      <form id="form-inicio" class="linha" autocomplete="off">
+        <input id="nome" class="campo" name="nome" placeholder="Seu nome" aria-label="Seu nome" maxlength="80" required>
+        <button class="botao" type="submit">Começar</button>
+      </form>
+      <div id="erro-inicio"></div>
+    </section>
+
+    <section id="tela-questao" class="cartao" hidden>
+      <div class="cabecalho-questao">
+        <span id="em-teste" class="etiqueta"></span>
+        <span id="contador" class="sutil pequeno"></span>
+      </div>
+      <p id="enunciado" class="enunciado"></p>
+      <pre id="codigo" class="codigo"></pre>
+      <div id="opcoes" class="opcoes" role="group" aria-label="Opções de resposta"></div>
+      <div id="retorno" class="retorno" hidden aria-live="polite">
+        <strong id="retorno-titulo"></strong>
+        <p id="retorno-explicacao"></p>
+        <button id="botao-proxima" class="botao" type="button">Próxima</button>
+      </div>
+      <div id="erro-questao"></div>
+    </section>
+
+    <section id="tela-final" hidden>
+      <div class="cartao">
+        <div class="detalhe-topo">
+          <div>
+            <h1>Seu diagnóstico</h1>
+            <p id="final-resumo" class="sutil"></p>
+          </div>
+          <button id="botao-nova" class="botao secundario" type="button">Nova sessão</button>
+        </div>
+        <div id="final-diagnostico"></div>
+      </div>
+      <div class="cartao">
+        <h2>Domínio por conceito</h2>
+        <div id="final-legenda" style="margin-bottom: 12px"></div>
+        <div id="final-barras"></div>
+      </div>
+      <div class="cartao">
+        <h2>Como o sistema chegou a isso</h2>
+        <p class="sutil pequeno">Para cada questão: por que ela foi escolhida e como a estimativa de cada conceito mudou com a sua resposta. "Pelo grafo" mostra conceitos que mudaram por serem pré-requisitos ou dependentes dos conceitos da questão.</p>
+        <div id="final-trilha"></div>
+      </div>
+    </section>
+
+  </main>
+  <script type="module" src="/js/aluno.js"></script>
+</body>
+</html>

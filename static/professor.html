@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Professor · Mapa de Lacunas</title>
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="marca" href="/">Mapa de <span>Lacunas</span> Conceituais</a>
+    <span class="papel">Professor</span>
+  </header>
+  <main>
+    <div id="erro-geral"></div>
+
+    <div class="painel-professor">
+      <section class="cartao">
+        <div class="detalhe-topo">
+          <div>
+            <h1>Mapa de calor da turma</h1>
+            <p id="resumo-turma" class="sutil pequeno"></p>
+          </div>
+          <div id="legenda"></div>
+        </div>
+        <p class="sutil pequeno">Linhas: conceitos, da base para o topo do grafo. Colunas: alunos (última sessão). Passe o mouse para ver o valor; clique numa coluna para abrir o diagnóstico do aluno.</p>
+        <div class="mapa-rolagem">
+          <div id="mapa" class="mapa" role="grid" aria-label="Mapa de calor: domínio de cada conceito por aluno"></div>
+        </div>
+      </section>
+
+      <aside>
+        <section class="cartao">
+          <h2>Conceitos mais críticos</h2>
+          <p class="sutil pequeno">Percentual de alunos com lacuna em cada conceito.</p>
+          <div id="criticos" class="criticos"></div>
+        </section>
+        <section class="cartao">
+          <h2>Alunos em risco</h2>
+          <p class="sutil pequeno">Com lacuna raiz, do que tem mais lacunas para o que tem menos.</p>
+          <ul id="risco" class="lista-risco"></ul>
+        </section>
+      </aside>
+    </div>
+
+    <section id="detalhe" class="cartao" hidden tabindex="-1" aria-live="polite">
+      <div class="detalhe-topo">
+        <div>
+          <h2 id="detalhe-nome"></h2>
+          <p id="detalhe-info" class="sutil pequeno"></p>
+        </div>
+        <button id="fechar-detalhe" class="botao secundario" type="button">Fechar</button>
+      </div>
+      <div id="detalhe-diagnostico"></div>
+      <div class="duas-colunas">
+        <div>
+          <h3>Domínio por conceito</h3>
+          <div id="detalhe-barras"></div>
+        </div>
+        <div>
+          <h3>Trilha de raciocínio</h3>
+          <div id="detalhe-trilha"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="dica" class="dica" hidden></div>
+  <script type="module" src="/js/professor.js"></script>
+</body>
+</html>
