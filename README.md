@@ -200,3 +200,9 @@ Para a API, as decisões de projeto e a revisão pedagógica pendente, veja [`do
 - Doignon, J.-P.; Falmagne, J.-C. (1999). *Knowledge Spaces.* Springer. (Teoria dos Espaços de Conhecimento)
 - Leighton, J. P.; Gierl, M. J.; Hunka, S. M. (2004). *The attribute hierarchy method for cognitive assessment: a variation on Tatsuoka's rule-space approach.* Journal of Educational Measurement, 41(3).
 - Corbett, A. T.; Anderson, J. R. (1995). *Knowledge tracing: Modeling the acquisition of procedural knowledge.* User Modeling and User-Adapted Interaction, 4.
+
+---
+
+## Licença
+
+Distribuído sob a licença MIT: você pode usar, copiar, modificar e redistribuir, desde que mantenha o aviso de copyright. Veja [`LICENSE`](LICENSE).
